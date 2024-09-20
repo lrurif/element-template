@@ -137,7 +137,6 @@ const webpackConfig = {
   },
   devtool: '#eval-source-map'
 };
-console.log("执行啦啦啦啦");
 webpackConfig.externals = {
   vue: 'Vue',
   'vue-router': 'VueRouter',
