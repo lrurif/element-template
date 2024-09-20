@@ -137,13 +137,15 @@ const webpackConfig = {
   },
   devtool: '#eval-source-map'
 };
-
+console.log("执行啦啦啦啦");
+webpackConfig.externals = {
+  vue: 'Vue',
+  'vue-router': 'VueRouter',
+  'highlight.js': 'hljs',
+  'element-ui': 'ELEMENT'
+};
 if (isProd) {
-  webpackConfig.externals = {
-    vue: 'Vue',
-    'vue-router': 'VueRouter',
-    'highlight.js': 'hljs'
-  };
+
   webpackConfig.plugins.push(
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash:7].css'

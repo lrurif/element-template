@@ -1,5 +1,5 @@
 {
-  "name": "element-ui",
+  "name": "element-ui-temp",
   "version": "2.15.14",
   "description": "A Component Library for Vue.js.",
   "main": "lib/element-ui.common.js",
@@ -30,7 +30,8 @@
     "lint": "eslint src/**/* test/**/* packages/**/* build/**/* --quiet",
     "pub": "npm run bootstrap && sh build/git-release.sh && sh build/release.sh && node build/bin/gen-indices.js",
     "test": "npm run lint && npm run build:theme && cross-env CI_ENV=/dev/ BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "test:watch": "npm run build:theme && cross-env BABEL_ENV=test karma start test/unit/karma.conf.js"
+    "test:watch": "npm run build:theme && cross-env BABEL_ENV=test karma start test/unit/karma.conf.js",
+    "aa": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js"
   },
   "faas": [
     {
