@@ -20,9 +20,9 @@
       <script src="//shadow.elemecdn.com/npm/vue-router@3.0.1/dist/vue-router.min.js"></script>
       <script src="//shadow.elemecdn.com/app/element/highlight.pack.b1f71b31-3c07-11e9-ba1a-55bba1877129.js"></script>
       <!-- 引入样式 -->
-      <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+      <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.13/lib/theme-chalk/index.css">
       <!-- 引入组件库 -->
-      <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+      <script src="https://unpkg.com/element-ui@2.15.13/lib/index.js"></script>
   </body>
   <% if (process.env.NODE_ENV === 'production') { %><script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
