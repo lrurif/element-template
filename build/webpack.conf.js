@@ -26,7 +26,8 @@ module.exports = {
     alias: config.alias
   },
   externals: {
-    vue: config.vue
+    vue: config.vue,
+    'element-ui': 'ELEMENT'
   },
   optimization: {
     minimizer: [
@@ -66,6 +67,15 @@ module.exports = {
   },
   plugins: [
     new ProgressBarPlugin(),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    {
+      apply: (compiler) => {
+        compiler.hooks.done.tap('DonePlugin', (stats) => {
+          setTimeout(() => {
+            process.exit(0);
+          });
+        });
+      }
+    }
   ]
 };

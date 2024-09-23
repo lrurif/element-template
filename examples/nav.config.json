@@ -1,10 +1,6 @@
 {
   "zh-CN": [
     {
-      "name": "更新日志",
-      "path": "/changelog"
-    },
-    {
       "name": "开发指南",
       "children": [
         {
@@ -24,8 +20,8 @@
           "groupName": "Basic",
           "list": [
             {
-              "path": "/button",
-              "title": "Button 按钮"
+              "path": "/form",
+              "title": "Form 自定义表单"
             }
           ]
         }
